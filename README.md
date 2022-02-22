@@ -8,12 +8,12 @@ Docker image to run secure properties tool from cli
 
 ### Encrypting
 ```
-# docker run docker-mule-secure-tool encrypt "P@55w0Rd" "Hello, World"
+# docker run docker-mule-secure-tool encrypt AES P@55w0Rd Hello,World
 jRUjOepQdGb1s+v5KD2Fdg==
 ```
 
 ### Decrypting
 ```
-# docker run docker-mule-secure-tool decrypt "P@55w0Rd" jRUjOepQdGb1s+v5KD2Fdg==`
+# docker run docker-mule-secure-tool decrypt AES P@55w0Rd jRUjOepQdGb1s+v5KD2Fdg==`
 Hello, World
 ```
